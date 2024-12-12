@@ -1,0 +1,101 @@
+.comments-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .comments-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .comments-list {
+    list-style-type: circle;
+   
+  }
+  
+  .comment-item {
+  overflow: hidden; /* Ẩn nội dung thừa */
+  padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Ensure content and small are in column */
+    align-items: flex-start;
+    word-break: break-all;
+    }
+  
+  .comment-item:last-child {
+    border-bottom: none;
+  }
+  
+  .comment-item p {
+    margin: 0;
+  }
+  
+  .comment-item small {
+    color: #666;
+    
+  }
+  .comment-meta {
+    color: #666;
+    margin: 5px; /* Add some space between content and small */
+  }
+  .add-comment-box {
+    margin-top: 10px;
+  }
+  
+  .add-comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .add-comment-btn,
+  .cancel-comment-btn,
+  .show-comment-box-btn,
+  .delete-comment-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .add-comment-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .add-comment-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-comment-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancel-comment-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .show-comment-box-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .show-comment-box-btn:hover {
+    background-color: #218838;
+  }
+  
+  .delete-comment-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-comment-btn:hover {
+    background-color: #c82333;
+  }

@@ -1,0 +1,237 @@
+.main-bar {
+    width: calc(100% - 300px - 24px);
+    float: left;
+    margin: 25px 0px;
+    padding: 0;
+  }
+  
+  /* ---------------------Main Bar Header----------------------- */
+  
+  .main-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-bar-header2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-bar-header h1 {
+    font-weight: 400;
+  }
+  
+/* ---------------------Info Container----------------------- */
+
+.info-container {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ chỗ */
+  }
+  
+  .container-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px); /* Mỗi phần tử chiếm 50% chiều rộng, trừ đi khoảng cách giữa chúng */
+    min-width: 280px; /* Đảm bảo rằng các phần tử không thu nhỏ quá mức trên màn hình nhỏ */
+  }
+  
+  .container-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .container-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  
+  /* ---------------------Ask Question Button----------------------- */
+  
+  .ask-button {
+    margin-top: 20px;
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ask-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ------------------------Main Bar Button 1------------------  */
+  
+  .main-bar-header .ask-btn-1 {
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #009dff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .main-bar-header .ask-btn-1:hover {
+    background-color: #0086d8;
+  }
+  
+  /* ------------------------Main Bar Button 2------------------  */
+  
+  .ask-btn-2 {
+    padding: 9px 13px;
+    border: solid 1px gray;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+    color: lightslategray;
+  }
+  
+  .ask-btn-2:hover {
+    background-color: gainsboro;
+  }
+  
+  /* ------------------------Filter------------------  */
+  
+  .filter {
+    margin-left: 20px;
+    border-radius: 3px;
+  }
+  
+  /* ---------------------Main Bar header 2----------------------- */
+  
+  .mainbar-header-buttons {
+    padding-top: 20px;
+  }
+  
+  /* --------------------Question Container---------------------- */
+  
+  .display-question-container {
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: solid 1px #edeff0;
+  }
+  
+  .display-question-details {
+    flex-grow: 1;
+    padding: 5px 20px 30px 10px;
+  }
+  
+  .question-body {
+    font-size: 14px;
+    color: #3a3a3a;
+  }
+  
+  .question-title-link {
+    text-decoration: none;
+    color: #037ecb;
+    transition: 0.3s;
+  }
+  
+  .question-title-link:hover {
+    color: #009dff;
+  }
+  
+  .display-question-details p {
+    padding: 4px;
+    margin: 0%;
+  }
+  
+  /* -------------------------Question Tags Time-------------------------- */
+  
+  .display-tags-time .display-tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .display-tags-time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .display-tags-time .display-tags p {
+    margin: 2px;
+    padding: 4px;
+    font-size: 13px;
+    background-color: #edeff0;
+    color: #39739d;
+  }
+  
+  .display-tags-time .display-time {
+    font-size: 13px;
+  }
+  
+  /* -----------------------------Minimize Adjustment--------------------- */
+  
+  @media only screen and (max-width: 800px) {
+    .main-bar {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .Bountied {
+      display: none;
+    }
+    .Unanswered {
+      display: none;
+    }
+    .filter {
+      display: none;
+    }
+  }
+  /* ---------------------User Questions List----------------------- */
+
+.user-questions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .question-item {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .question-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-title-link {
+    font-size: 1.2rem;
+    color: #037ecb;
+    text-decoration: none;
+  }
+  
+  .question-title-link:hover {
+    color: #f8bf03;
+    text-decoration: wavy;
+  }
+  
+  .no-questions-text {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+  }
+  

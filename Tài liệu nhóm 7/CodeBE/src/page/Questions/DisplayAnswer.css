@@ -1,0 +1,119 @@
+.edit-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .edit-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-buttons .save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .edit-buttons .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .edit-buttons .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .edit-buttons .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  .comment {
+    margin-bottom: 10px;
+  }
+  .comments-section {
+    margin-top: 15px;
+  }
+  .vote-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .vote-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0086d8;
+  }
+  
+  .vote-btn:hover {
+    color: #0056a3;
+  }
+  
+  .vote-btn span {
+    font-weight: bold;
+  }
+
+.display-ans {
+  display: flex;
+  flex-direction: column; /* Để giữ question-actions-user bên dưới */
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.answer-body-container {
+  overflow: hidden; /* Ẩn nội dung thừa */
+  text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung quá dài */
+  white-space: normal; /* Đảm bảo nội dung có thể xuống dòng */
+}
+
+
+.answer-content {
+  display: flex;
+  word-wrap: break-word;
+  align-items: flex-start; /* Căn chỉnh các phần tử tại đầu */
+  gap: 16px; /* Khoảng cách giữa vote và body */
+
+}
+
+.answer-votes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.answer-votes-container p {
+  margin: 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.question-actions-user {
+  margin-top: 16px; /* Khoảng cách giữa nội dung và các hành động */
+}
+
+.vote-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.vote-btn:hover {
+  background-color: #0056b3;
+}
+/* Phần hiển thị điểm */

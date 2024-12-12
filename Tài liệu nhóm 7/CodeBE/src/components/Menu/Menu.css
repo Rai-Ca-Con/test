@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.ul {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    list-style: none;
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+.li {
+    margin-bottom: 0;
+}
+
+.button {
+    background-color: transparent;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 30px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    transition: 0.3s; /* Điều chỉnh thời gian chuyển đổi */
+    z-index: 1;
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.button:hover {
+    color: rgb(172, 40, 0);
+}
+
+.button::before {
+    content: "";
+    border-radius: 3px;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: tomato;
+    left: -10px;
+    top: 50%; /* Căn giữa chiều dọc */
+    transform: translateY(-50%) rotate(225deg);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.button:hover::before {
+    width: 87px;
+    height: 80px;
+    left: 0;
+    top: 9px;
+    border-radius: 3px;
+    background-color: rgb(255, 83, 53);
+    transform: rotate(0deg);
+}
+
+.p {
+    z-index: 2;
+    position: relative;
+    margin: 0;
+}

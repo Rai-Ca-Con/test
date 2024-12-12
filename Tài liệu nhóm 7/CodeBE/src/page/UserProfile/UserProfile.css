@@ -1,0 +1,302 @@
+.user-details-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.user-details {
+    margin-top: 50px;
+    align-items: flex-start;
+
+}
+
+.user-name {
+    padding-left: 20px;
+}
+
+.user-name p {
+    color: #7e7e7e;
+}
+
+.edit-profile-title {
+    padding: 20px 0px;
+    border-bottom: solid 1px #dbd9d9;
+}
+
+.edit-profile-title-2 {
+    color: grey;
+    font-weight: 400;
+}
+
+.head-userprofile {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+.head-name {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: Helvetica;
+    margin: 0;
+    line-height: 32px;
+}
+
+.head-userprofile-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    opacity: 0.5;
+}
+
+.head-userprofile-edit-button {
+    padding: 10px 20px;
+    background-color: rgb(217, 210, 210);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.head-userprofile-edit-button:hover {
+    background-color: turquoise;
+    /* Change the background color on hover */
+    color: rgb(14, 47, 209);
+    /* Change text color on hover if needed */
+    /* Add any other hover effects here */
+}
+
+/*---------------------------------Tab Navigation-----------------------------------  */
+.tab-navigation {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #0a95ff;
+    /* Example active color */
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: #0a95ff;
+    /* Example hover color */
+    color: white;
+}
+
+/*--------------------------------------Form edit Profile--------------------------------------  */
+.edit-profile {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    /* Placeholder color */
+}
+
+.change-picture-button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.profile-info label {
+    /* display: block; */
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.profile-info input,
+.profile-info textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile-info textarea {
+    height: 120px;
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.save-button,
+.cancel-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    /* Màu nền cho nút Save */
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    /* Màu nền cho nút Cancel */
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button:hover {
+    background-color: #d32f2f;
+}
+
+/*--------------------------------DisPlay Profile-----------------------------  */
+
+.profile-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stats,
+.communities {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+.stats h3,
+.communities h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.stat-item span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.communities .community-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.edit-link {
+    text-align: right;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.post-placeholder {
+    text-align: center;
+}
+
+.post-placeholder img {
+    width: 50px;
+    margin-bottom: 10px;
+}

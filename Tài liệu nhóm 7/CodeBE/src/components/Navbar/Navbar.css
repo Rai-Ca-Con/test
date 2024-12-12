@@ -1,0 +1,135 @@
+.main-nav {
+    min-height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: solid 3px #ef8236;
+    box-shadow: 0px 1px 5px #00000033;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #f8f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 100%;
+    min-width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    padding: 5px 25px;
+}
+
+.nav-item {
+    margin: 0 3px;
+    font-size: small;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-btn {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgb(226, 226, 226);
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.nav-item:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.navbar form {
+    flex-grow: 0.8;
+    padding: 0 12px;
+    position: relative;
+}
+
+.navbar form input {
+    min-width: 90%;
+    margin: 0;
+    padding: 8px 10px 8px 32px;
+    font-size: 13px;
+    border: solid 1px #0000003e;
+    border-radius: 3px;
+}
+
+.navbar form .search-icon {
+    position: absolute;
+    left: 25px;
+    top: 8px;
+}
+
+.nav-links {
+    padding: 7px 13px;
+    border: solid 1px blue;
+    border-radius: 3px;
+    background-color: #e7f8fe;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links:hover {
+    background-color: #d0eefc; /* Change background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .navbar form {
+        width: 100%;
+    }
+
+    .navbar form input {
+        width: calc(100% - 40px); /* Adjust width for mobile */
+    }
+}
+.navbar form input {
+    /* Your existing styles */
+}
+
+.nav-links {
+    padding: 7px 13px;
+    border: solid 1px blue;
+    border-radius: 3px;
+    background-color: #e7f8fe;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-links:hover {
+    background-color: #d0eefc; /* Change background on hover */
+}
+
+.avatar-link {
+    cursor: pointer; /* Ensure cursor is pointer */
+}
+
+/* Additional styles for the avatar */
+.avatar {
+    transition: transform 0.2s;
+}
+
+.avatar:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
